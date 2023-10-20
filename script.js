@@ -1,14 +1,13 @@
 let captchachecked = false;
 function beforeSubmit(event){
         if(captchachecked){     
-        let outputDate = document.querySelector(".outputDate");
-        let inputdate = document.querySelector(".inputDate");
-        let formatedDate = new Date(inputdate.value).toLocaleDateString("en-US");
-        outputDate.value = formatedDate;
-        
+                let outputDate = document.querySelector(".outputDate");
+                let inputdate = document.querySelector(".inputDate");
+                let formatedDate = new Date(inputdate.value).toLocaleDateString("en-US");
+                outputDate.value = formatedDate;
         }else{
-        alert ("Please Check the reCAPTCHA");
-        event.preventDefault();
+                alert("Please Check the reCAPTCHA");
+                event.preventDefault();
         }
 }
 
