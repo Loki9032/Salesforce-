@@ -15,5 +15,5 @@ function timestamp() { var response = document.getElementById("g-recaptcha-respo
 
 function captchasuccess(){
   captchachecked = true;
-  alert("CAPTCHA was successfully completed");
+  console.log("CAPTCHA was successfully completed");
 }
